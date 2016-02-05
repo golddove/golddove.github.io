@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Grain</title>
+  <script>document.createElement( "picture" );</script>
+  <script src="framework/coffeegrinder/js/picturefill.min.js" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="framework/coffeegrinder/coffeegrinder.min.css">
+  <link rel="stylesheet" href="framework/coffeegrinder/wireframe-base.min.css">
+  <link rel="stylesheet" href="styles/wireframe-theme/default.min.css">
+  <link rel="stylesheet" href="styles/layout/grid.css">
+  <link rel="stylesheet" href="styles/customizations/main.css">
+</head>
+
+<body class="grid-2">
+  <div class="row row-5">
+    <div class="coffee-span-3 column-4"><a class="link-button button-link-1" href="index.html">&lt; About Me</a>
+    </div>
+    <div class="coffee-span-3">
+      <div class="responsive-picture">
+        <picture><img alt="Placeholder Picture" srcset="http://images.clipartpanda.com/pen-clipart-black-and-white-white-hand-pen-icon-md.png">
+        </picture>
+      </div>
+    </div>
+    <div class="coffee-span-6 column-3">
+      <h1 class="heading-2"><span class="heading-text-2">Project Grain</span>
+      </h1>
+    </div>
+  </div>
+  <div class="row row-6">
+    <div class="coffee-span-12">
+      <div class="container">
+        <div class="placeholder-hero hero-unit-2">
+          <h1 class="hero-header hero-header-4">What is it?</h1>
+          <p class="hero-tagline hero-tagline-2">The project is aimed at recreating the perception of fine textures through tool-mediated contact. The goal is to allow the user to experience, while dragging the device on a flat surface, the expected accelerations of a virtual texture. It will allow someone seperated from an object either in time or in location to be able to get a feel for the detailed surface of the object. To create the impression, a stylus with a linear solenoid causes vertical depressions and bellows of the hand relative to the surface. The frequency of these vibrations will be based on recorded data of the target surface.</p>
+        </div>
+        <div class="placeholder-hero hero-unit-3">
+          <h1 class="hero-header hero-header-2">How does it work?</h1>
+          <p class="hero-tagline hero-tagline-3">To collect data about a surface, an accelerometer is used. The vertical accelerations as an accelerometer scans the surface characterize the effect it will have on any tool. This is then stored in a ROM as a function of the scanning speed and force, both of which affect the feel of the texture. A microprocessor will read from this ROM to determine whether the stylus should currently be rising or lowering. This determination will then control the activation of the push-pull solenoid on the stylus.<br><br>The chosen solenoid is a push / pull solenoid because the device would have to function both quickly and at an angle. In order for the vibration to seem like the kind of vibration felt when dragging along a surface while applying pressure, both the upward and downward motions need to be firm, purposeful, and fast. The integrated return spring in the solenoid ensures that there is a consistent force in both directions - one created by the electromagnetic effect on the permanent magnent and the other created by the spring when the current stops passing through the coil of wire. Without a return spring, the returning mechanism would be purely dependant on gravity and would therefore not impart a consistent and fast force. Additionally, as the device is held at an angle, the weaknesses of gravity become more pronounced, approaching to no effect as the devices approaches a horizontal orientation. If the device is held with the solenoid’s direction of force pointing towards gravity, it will never return. So, a return spring was ideal.<br>
+          </p>
+        </div>
+        <div class="placeholder-hero hero-unit-4">
+          <h1 class="hero-header hero-header-3">Why is this important?</h1>
+          <p class="hero-tagline hero-tagline-4">One primary application is in medical education. It is very important, for example, for heart and dental surgeons to have an intuitive understanding of the feeling of certain structures in the body. This is not easily conveyed through speech and visuals before a student’s first surgery, and a device like this can convey the fine textures after being recorded by a medical professional.<br><br>There is also utility for this in the field. Increasingly, doctors are controlling robotic tools to perform certain fine operations. However, a key aspect of typical surgery is lost: the sense of touch. So, if the robotic instruments can also be outfitted with an accelerometer, the doctors can then reclaim that important feedback when performing surgery.<br><br>Currently, there are already many haptic feedback devices that can recreate the impression of an object in midair. A user moves around a stylus that is connected to a base and the stylus suddenly restricts movement when the virtual object is encountered. From this, one can gather the location, size, and general shape of an object. This project is a stepping stone that, if integrated, can lead to a much more useful product that conveys the fine textures on the surface of these virtual or recorded objects.<br>
+          </p>
+        </div>
+        <div class="html-element"></div>
+      </div>
+    </div>
+  </div>
+  <script src="framework/coffeegrinder/js/jquery-1.11.0.min.js"></script>
+</body>
+
+</html>
